@@ -10,9 +10,16 @@
 		250CF6A9299E70B2000EB4A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250CF6A8299E70B2000EB4A3 /* AppDelegate.swift */; };
 		250CF6AB299E70B2000EB4A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250CF6AA299E70B2000EB4A3 /* SceneDelegate.swift */; };
 		250CF6AD299E70B2000EB4A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250CF6AC299E70B2000EB4A3 /* ViewController.swift */; };
-		250CF6B0299E70B2000EB4A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250CF6AE299E70B2000EB4A3 /* Main.storyboard */; };
 		250CF6B2299E70B7000EB4A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250CF6B1299E70B7000EB4A3 /* Assets.xcassets */; };
 		250CF6B5299E70B7000EB4A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250CF6B3299E70B7000EB4A3 /* LaunchScreen.storyboard */; };
+		258C8477299E71750004205C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258C8476299E71750004205C /* TableViewCell.swift */; };
+		258C8479299E718E0004205C /* NewNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258C8478299E718E0004205C /* NewNotesViewController.swift */; };
+		258C847B299E71A90004205C /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258C847A299E71A90004205C /* RealmManager.swift */; };
+		258C847D299E71BB0004205C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258C847C299E71BB0004205C /* Model.swift */; };
+		258C847F299E71D20004205C /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258C847E299E71D20004205C /* Protocol.swift */; };
+		258C8482299E72390004205C /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 258C8481299E72390004205C /* Realm */; };
+		258C8484299E72390004205C /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 258C8483299E72390004205C /* RealmSwift */; };
+		258C8487299E72620004205C /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 258C8486299E72620004205C /* SnapKit-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +27,14 @@
 		250CF6A8299E70B2000EB4A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		250CF6AA299E70B2000EB4A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		250CF6AC299E70B2000EB4A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		250CF6AF299E70B2000EB4A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		250CF6B1299E70B7000EB4A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		250CF6B4299E70B7000EB4A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		250CF6B6299E70B7000EB4A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		258C8476299E71750004205C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		258C8478299E718E0004205C /* NewNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNotesViewController.swift; sourceTree = "<group>"; };
+		258C847A299E71A90004205C /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		258C847C299E71BB0004205C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		258C847E299E71D20004205C /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				258C8484299E72390004205C /* RealmSwift in Frameworks */,
+				258C8482299E72390004205C /* Realm in Frameworks */,
+				258C8487299E72620004205C /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,10 +73,14 @@
 				250CF6A8299E70B2000EB4A3 /* AppDelegate.swift */,
 				250CF6AA299E70B2000EB4A3 /* SceneDelegate.swift */,
 				250CF6AC299E70B2000EB4A3 /* ViewController.swift */,
-				250CF6AE299E70B2000EB4A3 /* Main.storyboard */,
+				258C8476299E71750004205C /* TableViewCell.swift */,
+				258C8478299E718E0004205C /* NewNotesViewController.swift */,
 				250CF6B1299E70B7000EB4A3 /* Assets.xcassets */,
 				250CF6B3299E70B7000EB4A3 /* LaunchScreen.storyboard */,
 				250CF6B6299E70B7000EB4A3 /* Info.plist */,
+				258C847A299E71A90004205C /* RealmManager.swift */,
+				258C847C299E71BB0004205C /* Model.swift */,
+				258C847E299E71D20004205C /* Protocol.swift */,
 			);
 			path = TestTaskNote;
 			sourceTree = "<group>";
@@ -83,6 +101,11 @@
 			dependencies = (
 			);
 			name = TestTaskNote;
+			packageProductDependencies = (
+				258C8481299E72390004205C /* Realm */,
+				258C8483299E72390004205C /* RealmSwift */,
+				258C8486299E72620004205C /* SnapKit-Dynamic */,
+			);
 			productName = TestTaskNote;
 			productReference = 250CF6A5299E70B2000EB4A3 /* TestTaskNote.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,10 @@
 				Base,
 			);
 			mainGroup = 250CF69C299E70B2000EB4A3;
+			packageReferences = (
+				258C8480299E72390004205C /* XCRemoteSwiftPackageReference "realm-swift" */,
+				258C8485299E72620004205C /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 250CF6A6299E70B2000EB4A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +154,6 @@
 			files = (
 				250CF6B5299E70B7000EB4A3 /* LaunchScreen.storyboard in Resources */,
 				250CF6B2299E70B7000EB4A3 /* Assets.xcassets in Resources */,
-				250CF6B0299E70B2000EB4A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +164,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				258C847D299E71BB0004205C /* Model.swift in Sources */,
 				250CF6AD299E70B2000EB4A3 /* ViewController.swift in Sources */,
+				258C8477299E71750004205C /* TableViewCell.swift in Sources */,
+				258C847F299E71D20004205C /* Protocol.swift in Sources */,
+				258C8479299E718E0004205C /* NewNotesViewController.swift in Sources */,
 				250CF6A9299E70B2000EB4A3 /* AppDelegate.swift in Sources */,
 				250CF6AB299E70B2000EB4A3 /* SceneDelegate.swift in Sources */,
+				258C847B299E71A90004205C /* RealmManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		250CF6AE299E70B2000EB4A3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				250CF6AF299E70B2000EB4A3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		250CF6B3299E70B7000EB4A3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +315,6 @@
 				INFOPLIST_FILE = TestTaskNote/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +342,6 @@
 				INFOPLIST_FILE = TestTaskNote/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +379,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		258C8480299E72390004205C /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.36.0;
+			};
+		};
+		258C8485299E72620004205C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		258C8481299E72390004205C /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 258C8480299E72390004205C /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		258C8483299E72390004205C /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 258C8480299E72390004205C /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		258C8486299E72620004205C /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 258C8485299E72620004205C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 250CF69D299E70B2000EB4A3 /* Project object */;
 }
