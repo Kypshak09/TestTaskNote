@@ -122,6 +122,12 @@ class NewNotesViewController: UIViewController {
                 attributes[NSAttributedString.Key.font] = boldFont
             }
             textView.typingAttributes = attributes
+        
+        let selectedRange = textView.selectedRange
+        let attributedText = NSMutableAttributedString(attributedString: textView.textStorage)
+        attributedText.addAttributes(attributes, range: selectedRange)
+        textView.textStorage.setAttributedString(attributedText)
+        textView.selectedRange = selectedRange
     }
     
     @objc func italicButtonPressed() {
@@ -140,7 +146,11 @@ class NewNotesViewController: UIViewController {
                 attributes[NSAttributedString.Key.font] = italicFont
             }
             textView.typingAttributes = attributes
-        
+        let selectedRange = textView.selectedRange
+        let attributedText = NSMutableAttributedString(attributedString: textView.textStorage)
+        attributedText.addAttributes(attributes, range: selectedRange)
+        textView.textStorage.setAttributedString(attributedText)
+        textView.selectedRange = selectedRange
     }
     
     @objc func monoSpaceButtonPressed() {
@@ -159,7 +169,11 @@ class NewNotesViewController: UIViewController {
                 attributes[NSAttributedString.Key.font] = monoFont
             }
             textView.typingAttributes = attributes
-        
+        let selectedRange = textView.selectedRange
+        let attributedText = NSMutableAttributedString(attributedString: textView.textStorage)
+        attributedText.addAttributes(attributes, range: selectedRange)
+        textView.textStorage.setAttributedString(attributedText)
+        textView.selectedRange = selectedRange
     }
 }
 

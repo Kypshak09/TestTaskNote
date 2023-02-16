@@ -21,13 +21,13 @@ class TableViewCell: UITableViewCell {
     
     let title: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "Arial", size: 30)
+        label.font = .systemFont(ofSize: 30)
         return label
     }()
     
     let desription: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "Arial", size: 15)
+        label.font = .systemFont(ofSize: 15)
         label.numberOfLines = 0
         return label
     }()
