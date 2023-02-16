@@ -3,7 +3,7 @@ Simple note taking application, with saving local data, and changing text font \
 Technologies used:\
 **1)UIKit** \
 **2)SnapKit(code layout)**\
-**3)Realm(Database)**\
+**3)Realm(Database)**
 --
 Тестовое Задание:\
 **Обязательные требования:** \
